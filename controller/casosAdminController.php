@@ -18,7 +18,8 @@ Class casosAdminController Extends baseController {
 
         $id = $this->registry->router->id;
         $order_list_caso = $this->registry->router->config['order_list_caso']; 
-        $order_list_casos = ''; 
+        $order_list_casos = '';
+        $order_list_casos2 = 'test2';
         if ($id != '-1'){
                 $desde = $id;
                 $_SESSION['ST_LISTA_CASOS'] = $desde;
