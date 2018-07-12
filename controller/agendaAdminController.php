@@ -17,6 +17,7 @@ Class agendaAdminController Extends baseController {
         $agenda = $agenda_obj->_list();
         $agenda = utf8_array_decode($agenda);
         $data['agenda'] = json_encode($agenda);
+        $data2['agenda2'] = json_encode($agenda2);
         $this->registry->template->show('agendaAdmin',$data);
     }
 
